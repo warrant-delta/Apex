@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: radial-gradient(ellipse at center, #1b2735 0%, #090a0f 100%);
+  color: #fff;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.nav-bar input[type="text"] {
+  flex: 1;
+  margin: 0 10px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: none;
+}
+
+.nav-bar button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.iframeWindow {
+  width: 100%;
+  height: calc(100vh - 50px);
+  border: none;
+}

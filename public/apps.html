@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Apex Apps</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <h1>Apps</h1>
+  <ul>
+    <li><a href="#" onclick="openUV('https://www.youtube.com')">YouTube</a></li>
+    <li><a href="#" onclick="openUV('https://open.spotify.com')">Spotify</a></li>
+    <li><a href="#" onclick="openUV('https://discord.com/app')">Discord</a></li>
+    <li><a href="#" onclick="openUV('https://drive.google.com')">Google Drive</a></li>
+  </ul>
+
+  <script src="/uv/uv.bundle.js"></script>
+  <script src="/uv/uv.config.js"></script>
+  <script>
+    function openUV(url) {
+      window.location.href = __uv$config.prefix + __uv$config.encodeUrl(url);
+    }
+  </script>
+</body>
+</html>

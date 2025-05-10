@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Apex Games</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <h1>Games</h1>
+  <ul>
+    <li><a href="#" onclick="openUV('https://play.geforce.now')">GeForce NOW</a></li>
+    <li><a href="#" onclick="openUV('https://now.gg')">Now.gg</a></li>
+    <li><a href="#" onclick="openUV('https://xbox.com/play')">Xbox Cloud Gaming</a></li>
+  </ul>
+
+  <script src="/uv/uv.bundle.js"></script>
+  <script src="/uv/uv.config.js"></script>
+  <script>
+    function openUV(url) {
+      window.location.href = __uv$config.prefix + __uv$config.encodeUrl(url);
+    }
+  </script>
+</body>
+</html>
